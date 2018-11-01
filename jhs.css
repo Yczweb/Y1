@@ -1,0 +1,241 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+/*头部*/
+#header{
+	height: 1.92rem;
+	background: #e6131c;
+	padding: .3rem 0 0 0;
+	display: flex;
+	flex-flow: wrap;
+	box-sizing: border-box;
+}
+#header img{
+	width: 100%;
+	height: .25rem;
+}
+#header .text{
+	width: 100%;
+	height: .86rem;
+	/*background: skyblue;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: .28rem;
+	color: #fff;
+	box-sizing: border-box;
+}
+#header .text p{
+	font-family: "黑体";
+	width: .98rem;
+	
+}
+#header .text h3{
+	font-size: .63rem;
+}
+#header .text .img{
+	width: 2.23rem;
+	height: .86rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#header .text .img img{
+	width: .72rem;
+	height: .63rem;
+	background: transparent;
+}
+#header .text ul{
+	width: .56rem;
+	height: .18rem;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+}
+#header .text ul li{
+	width: .12rem;
+	height: .12rem;
+	border-radius: 50%;
+	background: black;
+}
+#header .text .img div{
+	width: .33rem;
+	height: .33rem;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	margin-bottom: .4rem;
+	margin-left: -.53rem;
+}
+/*导航*/
+#nav{
+	height: 1.2rem;
+	background: #fff;
+	display: flex;
+}
+#nav ul{
+	width: 90%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: .43rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+}
+.actent{
+	color: #d33327;
+}
+#nav p{
+	font-family: "黑体";
+	width: 10%;
+	height: 1.2rem;
+	text-align: center;
+	line-height: 1.2rem;
+	font-size: .43rem;
+}
+/*轮播*/
+
+.swiper-slide img{
+	width: 100%;
+	height: 5.9rem;
+}
+/*展示*/
+#show{
+	width: 100%;
+	height: 3.2rem;
+	background: #fff;
+	text-align: center;
+}
+#show img{
+	width: 11.44rem;
+	height: 3rem;
+}
+/*列表*/
+#List{
+	width: 100%;
+	height: 6.4rem;
+	display: flex;
+	background: #fff;
+}
+.cleft{
+	width: 50%;
+	height: 6.4rem;
+	
+}
+.LTop{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 .25rem;
+	align-items: center;
+	box-sizing: border-box;
+}
+.LTop p{
+	width: 2.82rem;
+	height: 2.9rem;
+	display: flex;
+	font-size: .33rem;
+	align-content: center;
+	text-align: center;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.LText{
+	width: 2.82rem;
+	height: .45rem;
+	font-size: .43rem;
+}
+.LTop p span{
+	display: inline-block;
+	width: 2.82rem;
+	height: .45rem;
+	margin-top: .1rem;
+}
+
+.LTop img{
+	width: 2.5rem;
+	height: 2.9rem;
+}
+
+.LBottom{
+	width: 100%;
+	height: 50%;
+}
+
+.cright{
+	width: 50%;
+	height: 6.4rem;
+}
+.RTop{
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+.RTop div{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	border-left: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+
+.RText{
+	width: 100%;
+	height: 1.27rem;
+	font-size: .33rem;
+	flex-flow: wrap;
+}
+.RText strong{
+	width: 100%;
+	height: .46rem;
+	font-size: .43rem;
+}
+.RText span{
+	display: inline-block;
+	width: 100%;
+	height: .45rem;
+}
+.RTop div img{
+	width: 1.45rem;
+	height: 1.75rem;
+}
+
+.RBottom{
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+/*logo*/
+#logo{
+	width: 100%;
+	height: 1.66rem;
+}
+#logo img{
+	width: 100%;
+	height: 1.66rem;
+}
+/*脚部*/
+#footer{
+	width: 100%;
+	height: 1.47rem;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+#footer ul{
+	width: 100%;
+	height: 1.47rem;
+	display: flex;
+	font-size: .26rem;
+	text-align: center;
+	justify-content: space-between;
+	padding: 0 .4rem;
+	box-sizing: border-box;
+}
+#footer ul li img{
+	width: 1.25rem;
+	height: 1rem;
+}

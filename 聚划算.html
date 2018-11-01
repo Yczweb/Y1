@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--WebApp全屏模式   隐藏地址栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta name="format-detection" content="telephone=no"/>
+		<!--告诉设备忽略将页面中的地址识别 -->
+		<meta name="format-detection" content="address=no"/>
+		<link rel="stylesheet" type="text/css" href="swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="jhs.css"/>
+	</head>
+	<style type="text/css">
+		body{
+				/*移动端的字体*/
+				font-family: helvetica;
+					
+					margin: 0;
+					background:#e5e5e5;
+				}
+			body *{
+				/*是解决 iPhone 横屏时默认会放大文字的问题，可是我试过，上面的css并不能解决，然后我发现 meta viewport 的initial-scale=1 倒是可以解决这个放大问题。*/
+				-webkit-text-size-adjust: 100%;
+				/*不想让用户复制文字，或是用a标签做了个点击按钮，点快的时候文字会被选中，很丑，这个时候可以使用下面的方案禁止文字选中。*/
+				-webkit-user-select: none;
+			}
+			a,button,input{
+				/*这个属性只用于iOS (iPhone和iPad)。当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景。要重设这个表现，你可以设置-webkit-tap-highlight-color为任何颜色。*/
+				/*想要禁用这个高亮，设置颜色的alpha值为0即可。*/
+				/*取消手机浏览器默认外边框样式*/
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+			}
+			button,input{
+				/*取消ios浏览器按钮默认样式*/
+				-webkit-appearance: none;
+			}
+			a{
+				text-decoration: none;
+				color: #333333;
+			}
+			input{
+				outline: none;
+				vertical-align: middle;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			li{
+				margin: 0;
+				padding: 0;
+			}
+			/*图片靠上*/
+			img{
+				vertical-align: top;
+			}
+			h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,ol,form,div{
+				margin: 0;
+				padding: 0;
+			}
+	</style>
+	<body>
+		<!--头部-->
+	<header id="header">
+		<img src="img/2017-06-01_201959.png"/>
+		<div class="text">
+			<p><</p>
+			<h3>聚划算</h3>
+			<div class="img">
+				<img src="img/2017-06-01_161502.png"/>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div></div>
+			</div>
+		</div>
+	</header>
+	<!--导航-->
+	<div id="nav">
+		<ul>
+			<li class="actent">全部</li>
+			<li>女装</li>
+			<li>男装</li>
+			<li>鞋包</li>
+			<li>运动</li>
+			<li>内衣饰品</li>
+		</ul>
+		<p>∨</p>
+	</div>
+	<!--轮播-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/2017-06-01_161536.png"/></div>
+		</div>
+	</div>
+	<!--展示-->
+	<div id="show">
+		<img src="img/2017-06-01_161610.png"/>
+	</div>
+	<!--列表-->
+	<div id="List">
+		<div class="cleft">
+			<div class="LTop">
+				<p>
+					<strong class="LText">非常大牌</strong>
+					<span>大牌尖货抄底价</span>
+					<span class="actent">型男必败清单</span>
+				</p>
+				<img src="img/2017-06-01_161633.png"/>
+			</div>
+			<div class="LTop LBottom">
+				<p>
+					<strong class="LText">全球精选</strong>
+					<span>1元起尝鲜</span>
+					<span class="">澳大利亚</span>
+				</p>
+				<img src="img/2017-06-01_161725.png"/>
+			</div>
+		</div>
+		<div class="cright">
+			<div class="RTop">
+				<div>
+					<p class="RText">
+						<strong>聚名牌</strong>
+						<span>全球奢拼折扣</span>
+					</p>
+					<img src="img/2017-06-01_161646.png"/>
+				</div>
+				<div>
+					<p class="RText">
+						<strong>火拼</strong>
+						<span>拼团抢半价</span>
+					</p>
+					<img src="img/2017-06-01_161703.png"/>
+				</div>
+			</div>
+			<div class="RTop RBottom">
+				<div>
+					<p class="RText">
+						<strong>聚家装</strong>
+						<span>套装底价返券</span>
+					</p>
+					<img src="img/2017-06-01_161646.png"/>
+				</div>
+				<div>
+					<p class="RText">
+						<strong>量贩团</strong>
+						<span>满减更划算</span>
+					</p>
+					<img src="img/2017-06-01_161703.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--logo-->
+	<div id="logo">
+		<img src="img/2017-06-01_161806.png"/>
+	</div>
+	<!--脚部-->
+	<footer id="footer">
+		<ul>
+			<li>
+				<img src="img/2017-06-01_161823.png"/>
+				<p class="actent">今日</p>
+			</li>
+			<li>
+				<img src="img/2017-06-01_161851.png"/>
+				<p>品牌</p>
+			</li>
+			<li>
+				<img src="img/2017-06-01_161910.png"/>
+				<p>聚透</p>
+			</li>
+			<li>
+				<img src="img/2017-06-01_161921.png"/>
+				<p>我的</p>
+			</li>
+		</ul>
+	</footer>
+	<div style="height: 1.47rem;"></div>
+	</body>
+	<script src="swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jhs.js" type="text/javascript" charset="utf-8"></script>
+</html>
